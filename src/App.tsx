@@ -1,8 +1,7 @@
-/**
- * @license
- * SPDX-License-Identifier: Apache-2.0
- */
-
 export default function App() {
-  return <div></div>;
+  return (
+    <div style={{ padding: "20px", fontSize: "24px", color: "black" }}>
+      TeamSync Manager is running
+    </div>
+  );
 }
