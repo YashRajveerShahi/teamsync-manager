@@ -1,20 +1,64 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# TeamSync Manager
 
-# Run and deploy your AI Studio app
+## Overview
 
-This contains everything you need to run your app locally.
+TeamSync Manager is a full-stack web application for managing projects and tasks. It allows users to create projects, assign tasks, and track progress with role-based access (Admin and Member).
 
-View your app in AI Studio: https://ai.studio/apps/2f9132f6-3b5b-4f48-8378-1f77562781bf
+---
+
+## Features
+
+* User authentication (Signup/Login)
+* Role-based access control
+* Project creation and management
+* Task assignment and status tracking
+* Dashboard for task overview and progress
+
+---
+
+## Tech Stack
+
+* Frontend: React, TypeScript, Vite
+* Backend: Node.js, Express.js
+* Database: MongoDB / SQL
+* API: REST
+
+---
 
 ## Run Locally
 
-**Prerequisites:**  Node.js
+1. Clone the repository
+   git clone https://github.com/YashRajveerShahi/teamsync-manager.git
 
+2. Install dependencies
+   npm install
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+3. Create a .env file and add:
+   PORT=5000
+   DATABASE_URL=your_database_url
+   JWT_SECRET=your_secret_key
+
+4. Run the app
+   npm run dev
+
+---
+
+## Deployment
+
+Live URL: Add your Railway link here
+
+---
+
+## API (Examples)
+
+POST /auth/signup
+POST /auth/login
+POST /projects
+POST /tasks
+PUT /tasks/:id
+
+---
+
+## Author
+
+Yash Rajveer Shahi
